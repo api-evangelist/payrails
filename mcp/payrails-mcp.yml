@@ -1,0 +1,118 @@
+generated: '2026-07-20'
+method: derived
+status: candidate
+source: https://docs.payrails.com/reference (documented operationIds)
+note: >-
+  No official hosted Payrails MCP server was found. This is a CANDIDATE tool list
+  derived from the documented Payrails API reference operationIds, grouped by product
+  area. Base URL https://api.payrails.io ; OAuth2 client-credentials bearer auth.
+server:
+  name: payrails
+  transport: http
+  url: null
+tools:
+  # Auth & SDK init
+  - name: get_oauth_token
+    description: Request an OAuth access token.
+    source_operation: getoauthtoken
+  - name: client_init
+    description: Initialize a client SDK session.
+    source_operation: clientinit
+  # Executions & payment actions
+  - name: create_execution
+    description: Create a workflow execution (start a payment).
+    source_operation: createexecution
+  - name: list_executions
+    description: Search and list executions.
+    source_operation: listexecutions
+  - name: get_execution
+    description: Get an execution by ID.
+    source_operation: getexecution
+  - name: authorize_payment
+    description: Authorize a payment.
+    source_operation: authorizeaction
+  - name: confirm_payment
+    description: Confirm a payment.
+    source_operation: confirmaction
+  - name: capture_payment
+    description: Capture a payment.
+    source_operation: captureaction
+  - name: cancel_payment
+    description: Cancel a payment.
+    source_operation: cancelaction
+  - name: refund_payment
+    description: Refund a payment.
+    source_operation: refundaction
+  - name: create_payout
+    description: Create a payout.
+    source_operation: payoutaction
+  - name: lookup_payment_options
+    description: Look up available payment options.
+    source_operation: lookupaction
+  # Payments
+  - name: list_payments
+    description: Search and list payments.
+    source_operation: listpayments
+  - name: get_payment
+    description: Get a payment by ID.
+    source_operation: getpayment
+  # Instruments & tokens
+  - name: create_instrument
+    description: Create a payment instrument.
+    source_operation: createinstrument
+  - name: list_instruments
+    description: Search and list instruments.
+    source_operation: listinstruments
+  - name: create_token
+    description: Create a token.
+    source_operation: createtoken
+  - name: list_tokens
+    description: Search and list tokens.
+    source_operation: listtokens
+  - name: provision_network_token
+    description: Provision a network token.
+    source_operation: provisionnetworktokenpublic
+  - name: generate_cryptogram
+    description: Generate a cryptogram for a network token.
+    source_operation: generatecryptogram
+  - name: bin_lookup
+    description: Get issuer info by BIN/IIN.
+    source_operation: getbinlookup
+  # Providers & config
+  - name: list_providers
+    description: Search and list payment providers.
+    source_operation: listproviders
+  - name: create_provider_config
+    description: Create a provider configuration.
+    source_operation: createproviderconfig
+  # Workflow configuration
+  - name: list_workflow_configurations
+    description: Search and list workflow configurations.
+    source_operation: listworkflowconfigurations
+  - name: create_workflow_configuration
+    description: Create a workflow configuration.
+    source_operation: createworkflowconfiguration
+  # Disputes
+  - name: list_disputes
+    description: Search and list disputes.
+    source_operation: listdisputes
+  - name: defend_dispute
+    description: Defend a dispute with evidence.
+    source_operation: defenddispute
+  - name: accept_dispute
+    description: Accept a dispute.
+    source_operation: acceptdispute
+  # Reports
+  - name: create_report_run
+    description: Create a report run.
+    source_operation: createreportrun
+  - name: list_reports
+    description: Search and list reports.
+    source_operation: getreports
+  # Vault
+  - name: vault_proxy
+    description: Execute an instant vault proxy request.
+    source_operation: vaultproxy
+  - name: get_vault_public_key
+    description: Get a public encryption key for tokenization.
+    source_operation: vaultpublicinfo

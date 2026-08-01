@@ -1,0 +1,72 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.payrails.com/docs/error-codes
+format: proprietary-errors-array
+envelope:
+  shape: |
+    { "errors": [ { "id": "UUID", "code": "String", "detail": "String",
+      "docUrl": "URL", "reason": "Object (optional: category, result, source, detail)" } ] }
+  fields:
+    id: Unique identifier for debugging with support
+    code: Machine-readable error classification
+    detail: Human-readable explanation
+    docUrl: Link to relevant documentation
+    reason: Optional context (category, result, source, detail)
+problems:
+  - code: request.malformed
+    meaning: Format or structure of the request does not adhere to required specifications.
+    resolution: Validate payload against API documentation.
+  - code: request.unauthorized
+    meaning: Request lacks necessary credentials to access resource.
+    resolution: Verify a valid access token in headers; obtain a new one via the Access Token API.
+  - code: request.forbidden
+    meaning: Credentials lack required permissions for the operation.
+    resolution: Review roles and permissions.
+  - code: request.not-found
+    meaning: Requested resource not found in system.
+    resolution: Verify URL and resource identifier accuracy.
+  - code: request.timeout
+    meaning: Request processing exceeded time limit.
+    resolution: Retry with same idempotency key if applicable.
+  - code: request.conflict
+    meaning: Operation cannot be completed due to conflict with resource state.
+    resolution: Review error details for conflict specifics.
+  - code: request.entity-too-large
+    meaning: Request size exceeds max limit.
+    resolution: Reduce request size.
+  - code: request.header.missing
+    meaning: Required header absent.
+    resolution: Check response body for missing header details.
+  - code: request.header.invalid
+    meaning: Header format or value incorrect.
+    resolution: Identify invalid header in response body.
+  - code: request.param.missing
+    meaning: Required parameter absent.
+    resolution: Identify missing parameter in response body.
+  - code: request.param.invalid
+    meaning: Parameter format or value incorrect.
+    resolution: Identify invalid parameter in response body.
+  - code: request.method-not-allowed
+    meaning: HTTP method incompatible with endpoint.
+    resolution: Use standard method for operation.
+  - code: request.canceled
+    meaning: Request was canceled by client before server processing.
+    resolution: Retry if completion desired.
+  - code: request.rate-limit
+    meaning: Too many requests in short duration.
+    resolution: Wait before retrying.
+  - code: workflow.action.not-allowed
+    meaning: Action not allowed for workflow or current state.
+    resolution: Verify workflow configuration with Payrails team.
+  - code: workflow.action.failed
+    meaning: Problem during execution of a Workflow Action.
+    resolution: Review reason field for Result Codes, category, source, detail.
+  - code: workflow.rule.failed
+    meaning: Problem during resolution of a Rule in a Workflow.
+    resolution: Review response body for specifics.
+  - code: internal
+    meaning: Something wrong happened inside the Payrails system.
+    resolution: Contact Payrails Support Team.
+  - code: service.unavailable
+    meaning: Request cannot process due to service unavailability.
+    resolution: Retry or contact Payrails Support Team.

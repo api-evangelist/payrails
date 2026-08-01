@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.payrails.com/docs/notifications
+type: Webhooks
+transport: HTTP POST (JSON) to a merchant-configured endpoint
+subscribe:
+  how: Configure endpoint URL in Configurations > Settings in the Payrails Portal.
+  ack: Respond HTTP 200 to acknowledge receipt.
+signature:
+  header: X-Signature
+  algorithm: HMAC-SHA256 (base64-encoded) of payload using portal-generated secret
+  example_langs: [Java, Python, Go, TypeScript]
+delivery:
+  ordering: Not guaranteed.
+  retries: Up to 10 times over ~6 hours with exponential backoff.
+  duplicates: Possible; dedupe by storing processed notification hashes.
+envelope_metadata: [event type, timestamp, details, workspace ID, trigger reason]
+events:
+  - name: executionCreated
+    description: A new execution started for a workflow, such as a payment for an order.
+  - name: executionActionRequested
+    description: A specific action, such as authorization, was requested for an execution.
+  - name: ruleEngineExecuted
+    description: The rule engine evaluated rules for a transaction to determine provider or payment priorities.
+  - name: executionActionCompleted
+    description: A specific action in the workflow completed successfully.
+  - name: executionActionUpdated
+    description: A previously requested action changed status or result (e.g. authorization pending -> success).
+  - name: networkOffersEnrollmentCompleted
+    description: A payment instrument enrolled successfully in a network offers program.
+dispute_notifications:
+  doc: https://docs.payrails.com/docs/dispute-notifications
+  description: Dispute lifecycle event notifications.

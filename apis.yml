@@ -1,8 +1,28 @@
 aid: payrails
 name: Payrails
-description: Payrails is a company surfaced as a portfolio company of a16z, eqt-ventures, general-catalyst
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Payrails is a modular payment and financial infrastructure platform — "the operating
+  system for profitable growth" — that gives merchants unified control over payments,
+  tokenization, and financial data. Its API and SDKs orchestrate payments across many
+  payment service providers (Adyen, Stripe, Checkout.com, Braintree, Klarna, and 100+
+  local methods), with a PCI-certified token vault, network tokenization, 3D Secure,
+  a no-code Workflow Studio for routing and decisioning, automated reconciliation,
+  chargeback/dispute management, fraud screening, and unified analytics. Authentication
+  is OAuth 2.0 client-credentials (plus optional mTLS); events are delivered as
+  HMAC-signed webhooks. Used by Eneba, PUMA, Vinted, Preply, inDrive, Just Eat, and Careem.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.payrails.com/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/payrails/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +34,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Payments
+- Payment Orchestration
+- Fintech
+- Tokenization
+- Fraud
+- Disputes
+- Reconciliation
+- Checkout
+- Financial Infrastructure
+apis:
+- name: Payrails API
+  description: >-
+    Payrails' REST API for payment orchestration — executions and payment actions
+    (authorize, confirm, capture, cancel, refund, payout), instruments and tokens,
+    the PCI vault, providers and workflow configuration, disputes, fraud, 3DS, reports,
+    SSO, and workspaces.
+  humanURL: https://docs.payrails.com/reference
+  baseURL: https://api.payrails.io
+  properties:
+  - type: Documentation
+    url: https://docs.payrails.com/docs
+  - type: APIReference
+    url: https://docs.payrails.com/reference
+  - type: Authentication
+    url: authentication/payrails-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -26,3 +70,76 @@ maintainers:
 common:
 - type: Website
   url: https://www.payrails.com/
+- type: DeveloperPortal
+  url: https://docs.payrails.com/docs
+- type: Documentation
+  url: https://docs.payrails.com/docs
+- type: APIReference
+  url: https://docs.payrails.com/reference
+- type: GettingStarted
+  url: https://docs.payrails.com/docs/set-up-your-payrails-account-and-environment
+- type: Blog
+  url: https://www.payrails.com/blog
+- type: Support
+  url: https://www.payrails.com/contact
+- type: GitHubOrganization
+  url: https://github.com/payrails
+- type: TermsOfService
+  url: https://www.payrails.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.payrails.com/privacy-policy
+- type: StatusPage
+  url: https://status.payrails.com
+- type: Authentication
+  url: authentication/payrails-authentication.yml
+- type: Idempotency
+  url: conventions/payrails-conventions.yml
+- type: Conventions
+  url: conventions/payrails-conventions.yml
+- type: ErrorCatalog
+  url: errors/payrails-problem-types.yml
+- type: DeclineCodes
+  url: errors/payrails-decline-codes.yml
+- type: Lifecycle
+  url: lifecycle/payrails-lifecycle.yml
+- type: Deprecation
+  url: https://docs.payrails.com/docs/v6-migration-guide
+- type: ChangeLog
+  url: https://docs.payrails.com/docs/v6-migration-guide
+- type: Sandbox
+  url: sandbox/payrails-sandbox.yml
+- type: Webhooks
+  url: asyncapi/payrails-notifications-webhooks.yml
+- type: Packages
+  url: packages/payrails-packages.yml
+- type: SDKs
+  url: packages/payrails-packages.yml
+- type: Components
+  url: components/payrails-components.yml
+- type: MCPServer
+  url: mcp/payrails-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: DataModel
+  url: data-model/payrails-data-model.yml
+- type: Conformance
+  url: conformance/payrails-conformance.yml
+- type: Compliance
+  url: https://www.payrails.com/security
+- type: WellKnown
+  url: well-known/payrails-well-known.yml
+- type: DomainSecurity
+  url: security/payrails-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/payrails-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.payrails.com/security
+- type: TrustCenter
+  url: security/payrails-trust-center.yml
+- type: LLMsTxt
+  url: llms/payrails-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 22
+  pass: local-v1

@@ -1,0 +1,47 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.payrails.com/docs
+docs: https://docs.payrails.com/reference
+authentication:
+  style: OAuth2 client-credentials bearer token (1h) + optional mTLS
+  ref: authentication/payrails-authentication.yml
+idempotency:
+  supported: true
+  mechanism: idempotency key
+  evidence: >-
+    The error reference documents request.timeout with the remediation
+    "Retry with same idempotency key if applicable", and request.canceled /
+    service.unavailable errors are explicitly retry-safe — indicating Payrails
+    honors an idempotency key so retries of authorize/capture/refund/payout do
+    not double-execute. request.conflict guards against conflicting resource state.
+  source: https://docs.payrails.com/docs/error-codes
+pagination:
+  style: cursor
+  evidence: >-
+    List endpoints (e.g. List SSO connections, List drop-in links, Search & list
+    executions/payments/actions) use cursor-based pagination with optional filters.
+  source: https://docs.payrails.com/reference/listssoconnections
+request_tracing:
+  error_id: Every 4xx error carries a unique `id` (UUID) for support/debugging.
+  source: https://docs.payrails.com/docs/error-codes
+error_envelope:
+  shape: |
+    { "errors": [ { "id": "UUID", "code": "String", "detail": "String",
+      "docUrl": "URL", "reason": { "category": ..., "result": ..., "source": ..., "detail": ... } } ] }
+  format: proprietary (errors[] array; not RFC 9457 problem+json)
+  ref: errors/payrails-problem-types.yml
+  source: https://docs.payrails.com/docs/error-codes
+versioning:
+  scheme: major-version product lines; current SDK/API line is v6
+  migration_guide: https://docs.payrails.com/docs/v6-migration-guide
+  agent_runbook: https://docs.payrails.com/docs/agent-runbook-v6-migration
+rate_limiting:
+  signaled_via_error: request.rate-limit ("Too many requests in short duration"; wait before retrying)
+  source: https://docs.payrails.com/docs/error-codes
+environments:
+  staging_base: https://api.staging.payrails.io
+  production_base: https://api.payrails.io
+  note: Credentials are scoped per environment.
+webhooks:
+  ref: asyncapi/payrails-notifications-webhooks.yml
+  signature: HMAC-SHA256 via X-Signature header

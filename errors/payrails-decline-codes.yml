@@ -1,0 +1,94 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.payrails.com/docs/operation-results
+description: >-
+  Payrails payment "operation results" — the result codes returned for payment
+  operations (authorize / capture / cancel / refund / payout). These surface on
+  the workflow action `reason.result` field and complement the API-level error
+  catalog in errors/payrails-problem-types.yml.
+envelope_field: reason.result (on workflow.action.failed and action objects)
+categories:
+  - name: Success
+    codes:
+      - code: Success
+        meaning: The requested operation was performed successfully.
+      - code: Accepted
+        meaning: Operation scheduled for execution on the provider side, awaiting callback.
+  - name: Pending
+    codes:
+      - code: Pending
+        meaning: The operation is waiting for an action to be completed.
+  - name: Redirect
+    codes:
+      - code: HTTPRedirectRequired
+        meaning: Requires an HTTP redirect for user completion (e.g. 3DS, external wallets).
+      - code: FormRedirectRequired
+        meaning: Requires a form-based redirect for user completion.
+  - name: Unknown
+    codes:
+      - code: UnexpectedProviderResponse
+        meaning: Unexpected response type received from provider.
+      - code: ProviderUnknownError
+        meaning: Failed response where provider cannot identify the error source.
+      - code: UnexpectedProviderError
+        meaning: Unexpected error response from provider.
+  - name: Connection
+    codes:
+      - code: ProviderConnectionError
+        meaning: Unable to reach provider services.
+      - code: Timeout
+        meaning: No timely response received from provider.
+      - code: ProviderTimeout
+        meaning: Provider's connection to another actor (e.g. acquirer) failed.
+  - name: Operation
+    codes:
+      - code: GenericRejection
+        meaning: Transaction rejected without specific reason.
+      - code: DuplicateOperation
+        meaning: Rejected as a duplicate transaction.
+      - code: OperationNotAllowed
+        meaning: Operation incompatible with transaction status.
+      - code: PayerCanceled
+        meaning: Customer canceled before payment completion.
+      - code: LimitExceeded
+        meaning: Fraud-prevention limit exceeded (amount, count, attempts, or time).
+  - name: Instrument
+    codes:
+      - code: InstrumentNotAllowed
+        meaning: Operation not permitted for this instrument type.
+      - code: InvalidInstrument
+        meaning: Instrument invalid (security code, number, PIN, expiry, AVS, token, or type issues).
+      - code: BlockedInstrument
+        meaning: Instrument currently blocked (stolen, lost, flagged, closed account).
+      - code: ExpiredInstrument
+        meaning: Instrument reached expiration or token revoked.
+  - name: Configuration
+    codes:
+      - code: ValidationError
+        meaning: Parameter validation failed pre-submission.
+      - code: ParamsError
+        meaning: Provider rejected due to parameter issues.
+      - code: ProviderConfigError
+        meaning: Missing required provider credentials or configuration.
+      - code: InvalidSignature
+        meaning: Request signature invalid.
+      - code: InternalServerError
+        meaning: Payrails system error detected.
+      - code: AuthenticationError
+        meaning: Provider authentication failed.
+      - code: PaymentMethodNotSupported
+        meaning: Provider doesn't support this payment method.
+  - name: PayerAuthentication
+    codes:
+      - code: PayerAuthenticationRequired
+        meaning: Authentication required but not requested.
+      - code: PayerAuthenticationFailed
+        meaning: Authentication failed (cancellation, abandonment, unsupported, mismatch).
+  - name: InsufficientBalance
+    codes:
+      - code: InsufficientBalance
+        meaning: Account lacks sufficient funds.
+  - name: FraudRisk
+    codes:
+      - code: FraudRisk
+        meaning: Transaction flagged by acquirer, issuer, or provider for fraud concerns.

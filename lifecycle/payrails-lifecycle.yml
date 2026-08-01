@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.payrails.com/docs
+versioning:
+  scheme: major product/SDK version lines
+  current: v6
+  migration_guide: https://docs.payrails.com/docs/v6-migration-guide
+  agent_runbook: https://docs.payrails.com/docs/agent-runbook-v6-migration
+deprecation:
+  policy_url: https://docs.payrails.com/docs/v6-migration-guide
+  notes: >-
+    Migration between major SDK versions (v5 -> v6) is documented with a human
+    migration guide and an agent runbook. No dated public RFC 8594 Sunset/Deprecation
+    header policy is published.
+status_page: https://status.payrails.com
+sla:
+  url: null
+  notes: SLA/uptime targets are enterprise-contract terms; not publicly published.
+support:
+  faq: https://docs.payrails.com/docs/frequently-asked-questions-1

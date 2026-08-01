@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.payrails.com/security
+standards:
+  - id: pci-dss
+    conforms: true
+    evidence: PCI DSS compliance stated on the security page; token vault is a PCI-certified environment.
+    source: https://www.payrails.com/security
+  - id: gdpr
+    conforms: true
+    evidence: GDPR compliance stated on the security page.
+    source: https://www.payrails.com/security
+  - id: oauth2
+    conforms: true
+    evidence: API authenticates via OAuth 2.0 client-credentials access tokens.
+    source: https://docs.payrails.com/reference/getoauthtoken
+  - id: mutual-tls
+    conforms: true
+    evidence: mTLS client-certificate connection option documented.
+    source: https://docs.payrails.com/docs/mtls-configuration-1
+  - id: emv-3ds
+    conforms: true
+    evidence: 3D Secure (3DS) authentication supported across checkout and workflows.
+    source: https://docs.payrails.com/docs/3d-secure
+  - id: network-tokenization
+    conforms: true
+    evidence: Network Token provisioning + cryptogram generation as a Token Requestor.
+    source: https://docs.payrails.com/docs/network-tokens
+  - id: saml-2.0-sso
+    conforms: true
+    evidence: SAML SSO configuration with identity providers.
+    source: https://docs.payrails.com/docs/single-sign-on
+  - id: iso-4217-currency
+    conforms: true
+    evidence: ISO 4217 currency code support documented.
+    source: https://docs.payrails.com/docs/currency-codes
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors use a proprietary errors[] array envelope, not application/problem+json.

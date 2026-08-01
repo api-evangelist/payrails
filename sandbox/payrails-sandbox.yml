@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.payrails.com/docs/test-payments
+environments:
+  staging_base: https://api.staging.payrails.io
+  production_base: https://api.payrails.io
+  separation: Credentials are created and scoped per environment (Staging vs Production) in the Portal.
+test_psp:
+  name: Test PSP (fake/mock payment provider)
+  enabled: Enabled by default from the creation of a Payrails environment.
+  default_behavior: Responds with success to payment requests by default.
+  simulation: >-
+    Customize responses by adding `meta` fields whose values correspond to
+    "operation results" (see errors/payrails-decline-codes.yml) to simulate
+    authorization, decline, fraud, invalid-data, and 3D Secure scenarios.
+  meta_fields_doc: https://docs.payrails.com/docs/operation-results
+scenarios_supported:
+  - authorization success
+  - decline scenarios (via operation-result meta values)
+  - fraud detection
+  - invalid data handling
+  - 3D Secure authentication
+notes: >-
+  Payrails does not publish fixed magic test card numbers; test behavior is driven
+  by the Test PSP plus meta fields mapping to operation results. No verbatim test
+  card values are published to capture.

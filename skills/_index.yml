@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: generated
+source: https://docs.payrails.com/reference
+note: >-
+  Agent Skills generated from documented Payrails operationIds + captured conventions
+  (auth, idempotency, errors, webhooks). Every referenced operationId appears verbatim
+  in the Payrails API reference.
+skills:
+  - file: payrails-accept-a-card-payment.md
+    name: Accept a card payment
+    api: mcp/payrails-mcp.yml
+    operations: [getoauthtoken, createexecution, authorizeaction, captureaction]
+  - file: payrails-refund-a-payment.md
+    name: Refund a payment
+    api: mcp/payrails-mcp.yml
+    operations: [getoauthtoken, listpayments, getpayment, refundaction]
+  - file: payrails-tokenize-a-card.md
+    name: Tokenize and vault a card
+    api: mcp/payrails-mcp.yml
+    operations: [getoauthtoken, vaultpublicinfo, createinstrument, createtoken]
+  - file: payrails-defend-a-dispute.md
+    name: Defend a dispute
+    api: mcp/payrails-mcp.yml
+    operations: [getoauthtoken, listdisputes, getdispute, uploaddisputeevidence, defenddispute, submitdisputeevidence]

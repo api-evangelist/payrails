@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.payrails.com/docs/sdk
+description: >-
+  Payrails ships client-side / embeddable checkout UI components delivered via the
+  Web SDK and mobile SDKs. Distinct from the server-side integration; these render
+  PCI-scope-reducing payment surfaces in the merchant's own app.
+families:
+  - name: Drop-in
+    kind: prebuilt hosted checkout surface
+    doc: https://docs.payrails.com/docs/drop-in
+    description: Fully prebuilt checkout that renders all configured payment methods.
+  - name: Elements
+    kind: composable UI elements
+    doc: https://docs.payrails.com/docs/elements
+    description: Individual, customizable payment UI elements for building a bespoke checkout.
+  - name: Secure Fields
+    kind: PCI-scope-reducing input fields (Collect container)
+    doc: https://docs.payrails.com/docs/secure-fields
+    description: Iframe-isolated card-data input fields for tokenization without touching raw PAN.
+  - name: Display SDK
+    kind: secure card-data display
+    doc: https://docs.payrails.com/docs/display-sdk
+    description: Securely render stored card data client-side with customizable styling.
+  - name: Web Fraud SDK
+    kind: device/fraud signal collection
+    doc: https://docs.payrails.com/docs/payrails-web-fraud-sdk
+loaders:
+  - "@payrails/web-sdk (npm)"
+  - "@payrails/react-native-sdk (npm)"
+  - payrails/ios-sdk (Swift)
+  - Payrails Android SDK
+integration_modes: [Drop-in, Elements, Secure Fields, Headless/API-only]

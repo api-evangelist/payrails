@@ -1,0 +1,95 @@
+generated: '2026-07-20'
+method: derived
+source: https://docs.payrails.com/reference (documented resources) + https://docs.payrails.com/docs/holder
+note: >-
+  Entity-relationship graph derived from the documented Payrails API resources and
+  the Holder/Instrument/Token/Account concept model. Cardinalities are inferred from
+  the reference (list/create/get shapes and id-reference fields); not from a machine
+  spec.
+entities:
+  - name: Workflow
+    description: A configurable payment orchestration flow (Workflow Studio).
+    relationships:
+      - {type: has_many, target: Execution, via: workflowId}
+      - {type: has_many, target: Ruleset}
+  - name: Execution
+    description: A single run of a workflow, e.g. a payment for an order.
+    relationships:
+      - {type: belongs_to, target: Workflow, via: workflowId}
+      - {type: has_many, target: Action}
+      - {type: has_many, target: Payment}
+  - name: Action
+    description: A discrete workflow step (authorize/capture/cancel/refund/payout/lookup).
+    relationships:
+      - {type: belongs_to, target: Execution}
+  - name: Payment
+    description: A payment aggregate with operations and logs.
+    relationships:
+      - {type: belongs_to, target: Execution}
+      - {type: has_many, target: PaymentOperation}
+  - name: Instrument
+    description: A payment instrument (card/wallet) belonging to a holder.
+    relationships:
+      - {type: belongs_to, target: Holder}
+      - {type: has_many, target: Token}
+      - {type: has_one, target: Record, via: instrumentId}
+  - name: Token
+    description: A stored token (incl. network tokens) for an instrument.
+    relationships:
+      - {type: belongs_to, target: Instrument}
+  - name: Holder
+    description: The party that owns instruments and accounts.
+    relationships:
+      - {type: has_many, target: Instrument}
+      - {type: has_many, target: Account}
+  - name: Account
+    description: A holder account used for transfers/payouts.
+    relationships:
+      - {type: belongs_to, target: Holder}
+      - {type: has_many, target: Transfer}
+  - name: Transfer
+    description: A movement of funds between accounts.
+    relationships:
+      - {type: belongs_to, target: Account}
+  - name: Provider
+    description: A payment service provider integrated via Payrails.
+    relationships:
+      - {type: has_many, target: ProviderConfig}
+  - name: ProviderConfig
+    description: A merchant's configuration/credentials for a provider.
+    relationships:
+      - {type: belongs_to, target: Provider}
+  - name: Ruleset
+    description: Rules that drive routing/decisioning inside workflows.
+  - name: Dispute
+    description: A chargeback/dispute with evidence, representment, alerts, and tags.
+    relationships:
+      - {type: has_many, target: DisputeEvidence}
+      - {type: has_many, target: Tag}
+      - {type: belongs_to, target: Payment}
+  - name: FraudCheck
+    description: A fraud screening result with operations and logs.
+    relationships:
+      - {type: belongs_to, target: Execution}
+  - name: ThreeDS
+    description: A 3D Secure authentication entity with operations and logs.
+    relationships:
+      - {type: belongs_to, target: Execution}
+  - name: Record
+    description: A vault record composed of fields, addressable by alias.
+    relationships:
+      - {type: has_many, target: Field}
+  - name: Field
+    description: A single vaulted field, addressable by alias.
+    relationships:
+      - {type: belongs_to, target: Record}
+  - name: Connection
+    description: A vault inbound/outbound proxy connection with versions.
+  - name: Workspace
+    description: A segregated managed space within an organization.
+    relationships:
+      - {type: has_many, target: Execution}
+  - name: Report
+    description: A financial/performance report with runs.
+    relationships:
+      - {type: has_many, target: ReportRun}

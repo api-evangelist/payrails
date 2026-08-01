@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+note: >-
+  Probed the /.well-known/ discovery surface on the API and site hosts. No
+  discovery documents are published (API hosts return 403 to unauthenticated
+  well-known requests; site/docs hosts return 404). Empty result is expected.
+hosts:
+  - host: https://api.payrails.io
+    documents:
+      - {path: /.well-known/security.txt, status: 403}
+      - {path: /.well-known/openid-configuration, status: 403}
+      - {path: /.well-known/oauth-authorization-server, status: 403}
+      - {path: /.well-known/api-catalog, status: 403}
+      - {path: /.well-known/ai-plugin.json, status: 403}
+  - host: https://www.payrails.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+  - host: https://docs.payrails.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}

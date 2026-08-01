@@ -1,0 +1,371 @@
+# Payrails Merchant Documentation Documentation
+
+> Documentation for Payrails Merchant Documentation
+
+## Guides
+- [Explore Payrails](https://docs.payrails.com/docs/explore-payrails.md): Explore Payrails product modules and integration steps
+- [Checkout](https://docs.payrails.com/docs/checkout.md)
+- [Dynamic Routing](https://docs.payrails.com/docs/routing.md)
+- [Token Vault](https://docs.payrails.com/docs/vault.md): Tokenize any sensitive data, store in a PCI-certified environment and used stored tokens, as a standalone module or within your orchestration workflows.
+- [Set up your Payrails account and environment](https://docs.payrails.com/docs/set-up-your-payrails-account-and-environment.md): Find the steps to start your integration with Payrails for any module.
+- [API Credentials](https://docs.payrails.com/docs/api-credentials-1.md)
+- [mTLS Configuration](https://docs.payrails.com/docs/mtls-configuration-1.md): Learn how to set up a secure connection with Payrails through mTLS.
+- [User Management](https://docs.payrails.com/docs/user-roles-permissions.md): Learn about user authentication, roles and permissions, and how to manage lifecycle of users.
+- [Authentication](https://docs.payrails.com/docs/authentication-1.md): Learn more about possible alternative authentication methods.
+- [Roles & Permissions](https://docs.payrails.com/docs/roles-permissions.md): Find all assigned roles and permissions for each API service.
+- [Frequently Asked Questions](https://docs.payrails.com/docs/frequently-asked-questions-1.md): Learn answers to frequently asked questions.
+- [Single Sign-On](https://docs.payrails.com/docs/single-sign-on.md): How to configure and maintain SAML SSO in Payrails using your organization’s identity provider.
+- [Organization](https://docs.payrails.com/docs/organizations.md): Your organization with unified view across all your workspaces, ensuring streamlined access and management.
+- [Workspaces](https://docs.payrails.com/docs/workspace.md): Learn about workspaces which helps to create segregated and separately managed spaces within your organization.
+- [Payrails Checkout SDKs](https://docs.payrails.com/docs/sdk.md)
+- [Web SDK - Quick Start](https://docs.payrails.com/docs/web-sdk-quick-start.md)
+- [How to customize the checkout's appearance](https://docs.payrails.com/docs/how-to-customize-the-checkouts-appearance.md)
+- [How to accept card payments](https://docs.payrails.com/docs/how-to-accept-card-payments.md)
+- [How to add Apple Pay and Google Pay](https://docs.payrails.com/docs/how-to-add-apple-pay-and-google-pay.md)
+- [How to collect card data with secure fields (collect container)](https://docs.payrails.com/docs/how-to-collect-card-data-with-secure-fields-collect-container.md)
+- [Using actionRequired event](https://docs.payrails.com/docs/action-required-event.md)
+- [v6 Migration Guide for Humans](https://docs.payrails.com/docs/v6-migration-guide.md)
+- [Agent Runbook - v6 Migration](https://docs.payrails.com/docs/agent-runbook-v6-migration.md)
+- [Event API Reference](https://docs.payrails.com/docs/event-api-reference.md)
+- [Appearance API reference](https://docs.payrails.com/docs/appearance-api-reference.md)
+- [Payrails API Reference](https://docs.payrails.com/docs/payrails-api-reference.md)
+- [Payrails Web Fraud SDK](https://docs.payrails.com/docs/payrails-web-fraud-sdk.md)
+- [Accept payments via API](https://docs.payrails.com/docs/accept-payments-via-api.md)
+- [IOS SDK - Quick start](https://docs.payrails.com/docs/ios-sdk.md)
+- [SDK Concepts ](https://docs.payrails.com/docs/sdk-concepts-1.md)
+- [SDK API Reference ](https://docs.payrails.com/docs/sdk-api-reference-1.md)
+- [Styling Guide](https://docs.payrails.com/docs/styling-guide-1.md)
+- [Troubleshooting ](https://docs.payrails.com/docs/troubleshooting-1.md)
+- [React Native SDK](https://docs.payrails.com/docs/react-native-sdk-1.md): The Payrails React Native SDK provides pre-built payment components for accepting payments in mobile apps.
+- [How to Integrate](https://docs.payrails.com/docs/how-to-integrate.md): How to integrate Drop-in and use different Elements.
+- [SDK Concepts](https://docs.payrails.com/docs/concepts.md)
+- [API References](https://docs.payrails.com/docs/api-references.md)
+- [Android SDK - Quick Start](https://docs.payrails.com/docs/android-sdk-1.md)
+- [How to Accept PayPal Payments](https://docs.payrails.com/docs/how-to-accept-paypal-payments.md)
+- [How to Accept Redirect Payments](https://docs.payrails.com/docs/how-to-accept-redirect-payments.md)
+- [How to Let Shoppers Choose a Card Network (Co-Branded Cards)](https://docs.payrails.com/docs/how-to-co-branded-cards.md)
+- [How to Build a Custom Pay Button (Your Own UI)](https://docs.payrails.com/docs/how-to-custom-pay-button.md)
+- [How to Run a Payment Without an SDK Button (Headless)](https://docs.payrails.com/docs/how-to-execute-payment-headless.md)
+- [Query Session Data](https://docs.payrails.com/docs/how-to-query-session-data-at-runtime.md)
+- [How to Tokenize a Card Without Charging It](https://docs.payrails.com/docs/how-to-tokenize-card.md)
+- [SDK API Reference](https://docs.payrails.com/docs/sdk-api-reference.md)
+- [SDK Concepts](https://docs.payrails.com/docs/sdk-concepts.md)
+- [Styling Guide](https://docs.payrails.com/docs/styling-guide.md)
+- [Troubleshooting](https://docs.payrails.com/docs/troubleshooting.md)
+- [Update Checkout Amount](https://docs.payrails.com/docs/update-checkout-amount.md)
+- [Secure Fields](https://docs.payrails.com/docs/secure-fields.md)
+- [Elements](https://docs.payrails.com/docs/elements.md)
+- [Drop-in](https://docs.payrails.com/docs/drop-in.md)
+- [SDK Events Glossary](https://docs.payrails.com/docs/sdk-events-glossary.md): This page describes events sent by Payrails SDKs
+- [Headless Integration using SDK](https://docs.payrails.com/docs/headless-integration-using-sdk.md)
+- [Integrations](https://docs.payrails.com/docs/integrations.md): Learn how to set up and configure payment provider integrations in Payrails.
+- [Adyen](https://docs.payrails.com/docs/adyen-integration-setup-guide.md): A step-by-step guide for setting up your Adyen payments integration in the Payrails portal.
+- [Amazon](https://docs.payrails.com/docs/amazon-integration-setup-guide.md): A step-by-step guide for setting up your Amazon payments services integration in the Payrails portal.
+- [Braintree (Paypal)](https://docs.payrails.com/docs/braintree-integration-setup-guide.md): A step-by-step guide for setting up your Braintree payments integration in the Payrails portal.
+- [Checkout.com](https://docs.payrails.com/docs/checkout-com-integration-setup-guide.md): A step-by-step guide for setting up your Checkout.com payments integration in the Payrails portal.
+- [Klarna](https://docs.payrails.com/docs/klarna-integration-setup-guide.md): A step-by-step guide for setting up your Klarna payments integration in the Payrails portal.
+- [Stripe](https://docs.payrails.com/docs/stripe-integration-setup-guide.md): A step-by-step guide for setting up your Stripe payments integration in the Payrails portal.
+- [Set up payment methods](https://docs.payrails.com/docs/set-up-payment-methods.md): Payrails is designed to simplify and streamline the process of offering multiple payment methods in your online checkout. With Payrails, you can provide your customers with a variety of payment options, making it more convenient for them to complete their purchases and improving your conversion rates.
+- [Cards](https://docs.payrails.com/docs/cards.md)
+- [Co Branded Cards](https://docs.payrails.com/docs/co-branded-cards.md)
+- [1Voucher](https://docs.payrails.com/docs/1voucher.md): 1Voucher is an alternative payment method in South Africa. With 1Voucher, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments via voucher redemption.
+- [Alfa (Bank Alfalah)](https://docs.payrails.com/docs/bank-alfalah.md): Alfa is an alternative payment method in Pakistan. With Alfa, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments with their wallet balance.
+- [Apple Pay](https://docs.payrails.com/docs/apple-pay.md): Allow customers to securely make payments using Apple Pay
+- [Alipay](https://docs.payrails.com/docs/alipay.md): Alipay is a digital wallet payment method widely used in China with over a billion active users worldwide. With Alipay, consumers can enjoy a seamless checkout experience by paying on the web or on a mobile device using their Alipay account credentials, eliminating the need to enter payment information manually.
+- [Amazon Pay](https://docs.payrails.com/docs/amazon-pay.md): Amazon Pay is a digital wallet payment method that lets customers check out using their Amazon account. With Amazon Pay, consumers can enjoy a seamless checkout experience using the payment methods and shipping addresses already stored in their Amazon account, eliminating the need to enter payment and shipping information manually.
+- [Bank Transfers](https://docs.payrails.com/docs/bank-transfers.md): Bank Transfers is an alternative payment method which enables customers enjoy a seamless checkout experience, with a choice of fulfilling their payments directly from their bank accounts without the use of any payment instruments.
+- [CashFree Wallets](https://docs.payrails.com/docs/cashfree-wallets.md): CashFree Wallets is an alternative payment method in India. With CashFree, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments directly from their wallet balance.
+- [EasyPaisa](https://docs.payrails.com/docs/easypaisa.md): EasyPaisa is an alternative payment method in Pakistan. With EasyPaisa, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments with their wallet balance.
+- [EFT Pro](https://docs.payrails.com/docs/eft-pro.md): EFT Pro is an alternative payment method in South Africa, exclusively created and offered by PayU. With EFT Pro, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments instantly via bank transfer from the list of supported banks.
+- [FawryPay](https://docs.payrails.com/docs/fawrypay.md): FawryPay is an alternative payment method in Egypt. With FawryPay, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments in cash or cards in Fawry stores and kiosks, as well as using their myFawry in-app wallet and saved cards.
+- [Google Pay](https://docs.payrails.com/docs/google-pay.md): Google Pay is a mobile payment and digital wallet service. With Google Pay, consumers can enjoy a seamless checkout experience, eliminating the need to enter payment and shipping information manually.
+- [JazzCash](https://docs.payrails.com/docs/jazzcash.md): JazzCash is an alternative payment method in Pakistan. With JazzCash, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments with their wallet balance.
+- [Konnect](https://docs.payrails.com/docs/konnect.md): Konnect is an alternative payment method in Pakistan. With Konnect, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments with their wallet balance.
+- [Mercado Pago](https://docs.payrails.com/docs/mercadopago.md): Mercado Pago is a payment gateway and digital wallet service. With Mercado Pago, customers can enjoy a seamless checkout experience, with a choice of different payment methods including card upfront payments, card installments and wallet.
+- [Mobile Wallets](https://docs.payrails.com/docs/mobile-wallets.md): Mobile Wallets is an alternative payment method which enables customers enjoy a seamless checkout experience, with a choice of fulfilling their payments directly from the Wallet balance linked to their Mobile without the use of any payment instruments.
+- [Direct Carrier Billing](https://docs.payrails.com/docs/direct-carrier-billing.md): Direct Carrier Billing (DCB) is an alternative payment method which enables customers enjoy a seamless checkout experience, with a choice of fulfilling their payments as a surcharge to their phone bill at the end of every cycle (usually monthly) without the use of any payment instruments. For customers who uses a prepaid sim card, the amount will be deducted from their current balance.
+- [Mono](https://docs.payrails.com/docs/mono.md): Mono is an alternative payment method which enables customers enjoy a seamless checkout experience, with a choice of fulfilling their payments via direct debits without the use of any payment instruments.
+- [NetBanking](https://docs.payrails.com/docs/netbanking.md): NetBanking is an alternative payment method in India. With NetBanking, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments directly from their bank's internet banking system.
+- [Nigeria Inter-Bank Settlement System (NIBSS)](https://docs.payrails.com/docs/nibss.md): NIBSS is an alternative payment method in Nigeria. With NIBSS, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments directly from their bank account via methods of remittance or electronic fund transfer.
+- [Opay](https://docs.payrails.com/docs/opay.md): Opay is an alternative payment method in Nigeria and Egypt. With Opay, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments with their wallet balance.
+- [Paga Wallet](https://docs.payrails.com/docs/paga-wallet.md): Paga Wallet is an alternative payment method which enables customers enjoy a seamless checkout experience, with a choice of fulfilling their payments directly from the Wallet balance without the use of any payment instruments.
+- [Payflex](https://docs.payrails.com/docs/payflex.md): Payflex is an alternative payment method (BNPL) in South Africa. With Payflex, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments instantly via their Payflex account through paying a downpayment via card and scheduling the remaining amount on installments to be debited from the same card.
+- [PayJustNow](https://docs.payrails.com/docs/payjustnow.md): PayJustNow is an alternative payment method (BNPL) in South Africa. With PayJustNow, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments instantly via their PayJustNow credit balance.
+- [PayPal](https://docs.payrails.com/docs/paypal.md): PayPal is an alternative payment method around the globe. With PayPal, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments with their wallet balance or any payment method that is linked to their account, e.g saved cards, bank accounts, e-wallets, etc.. Via PayPal, customers can also use a BNPL payment scheme and install the purchase amount directly to PayPal.
+- [PayPal Express Flow](https://docs.payrails.com/docs/paypal-express-flow.md)
+- [PayTM](https://docs.payrails.com/docs/paytm.md): PayTM is an alternative payment method in India. With PayTM, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments directly from their wallet balance.
+- [Pix](https://docs.payrails.com/docs/pix.md): Pix is an alternative payment method in Brazil. With Pix, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments in cash or using their card and/or wallet balance upon scanning the QR code.
+- [UPI](https://docs.payrails.com/docs/upi.md): Unified Payments Interface (UPI) is an alternative payment method in India. With UPI, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments in direct debiting from their registered account.
+- [WafaCash](https://docs.payrails.com/docs/wafacash.md): WafaCash is an alternative payment method in Morocco. With WafaCash, customers can enjoy a seamless checkout experience, with a choice of fulfilling their payments in cash or cards in stores and kiosks.
+- [KakaoPay](https://docs.payrails.com/docs/kakaopay.md): KakaoPay is South Korea's leading mobile payment platform with over 38 million registered users. With KakaoPay, customers can complete purchases with a single tap using their KakaoTalk account, making it one of the most trusted and widely used payment methods in South Korea.
+- [iDEAL](https://docs.payrails.com/docs/ideal.md): iDEAL is the Netherlands' leading online payment method, enabling direct bank transfers through a familiar and trusted interface. It is used by millions of Dutch consumers and supported by all major Dutch banks.
+- [Boleto](https://docs.payrails.com/docs/boleto.md): Boleto is one of Brazil's most widely used payment methods, allowing customers to pay for online purchases either over the counter at any supporting outlet in Brazil, or through internet banking. It is particularly popular because a significant portion of Brazilian consumers do not have a bank account.
+- [PicPay](https://docs.payrails.com/docs/picpay.md): PicPay is Brazil's largest digital payments app, with over 60 million users. It enables customers to make purchases by completing a secure payment flow through their PicPay wallet via QR code. PicPay users can send and receive money, pay bills, store loyalty cards and discount coupons, and more.
+- [Maya](https://docs.payrails.com/docs/maya.md): Maya is one of the Philippines' leading digital wallets and financial services platforms, with millions of users across the country. With Maya, customers can complete purchases securely through a redirect-based flow using their Maya account, making it one of the most trusted and widely used payment methods in the Philippines.
+- [Ovo](https://docs.payrails.com/docs/ovo.md): OVO is Indonesia's most popular digital wallet, enabling users to pay for almost anything — from online purchases and bill payments to offline barcode-scan transactions. With OVO, customers can complete purchases securely through a redirect-based flow using their OVO account, making it one of the most trusted and widely used payment methods in Indonesia.
+- [TrueMoney](https://docs.payrails.com/docs/truemoney.md): TrueMoney Wallet is one of Southeast Asia's most popular digital wallets, enabling customers to make secure online payments using their wallet balance, linked bank accounts, or stored cards. With TrueMoney, customers can complete purchases through a fast redirect-based flow, making it one of the most trusted and widely used payment methods in Thailand.
+- [Napas](https://docs.payrails.com/docs/napas.md): Napas (National Payment Corporation of Vietnam) is Vietnam's primary domestic card network, supporting debit cards issued by Vietnamese banks. It enables Vietnamese customers to make secure online payments through a redirect-based flow using their Napas-enabled bank card.
+- [PSE](https://docs.payrails.com/docs/pse.md): PSE (Pagos Seguros en Línea) is Colombia's leading online bank transfer method, operated by ACH Colombia. It allows customers to make direct ACH payments from their bank accounts for e-commerce purchases, making it one of the most trusted and widely used payment methods in Colombia.
+- [PagoEfectivo](https://docs.payrails.com/docs/pagoefectivo.md): PagoEfectivo is Peru's leading alternative payment network, allowing customers to pay for online purchases in cash at thousands of payment points across the country, or through their bank's online or mobile banking. It is widely used in Peru as it provides access to e-commerce for customers without credit cards.
+- [Nequi](https://docs.payrails.com/docs/nequi.md): Nequi is a widely used digital wallet in Colombia that enables people to send and receive money through their mobile phones. Users register with their local mobile number and ID, and can top up via cash, bank transfer, or Bancolombia accounts. With Nequi, customers can complete purchases through a simple redirect-based flow using their Nequi account.
+- [GrabPay](https://docs.payrails.com/docs/grabpay.md): GrabPay is Southeast Asia's leading super-app wallet, enabling customers to make secure cashless payments using their GrabPay balance. Widely used across the Philippines and Malaysia, GrabPay allows customers to pay through a fast redirect-based flow.
+- [DuitNow QR](https://docs.payrails.com/docs/duitnow-qr.md): DuitNow QR is Malaysia's national QR payment standard, regulated by Bank Negara Malaysia. It allows customers to make instant payments by scanning a QR code using any participating Malaysian banking or e-wallet app, making it one of the most widely adopted payment methods in Malaysia.
+- [ShopeePay](https://docs.payrails.com/docs/shopeepay.md): ShopeePay is Shopee's digital wallet, enabling customers to make fast and secure cashless payments. Widely used across Southeast Asia — including Indonesia, the Philippines, and Thailand — ShopeePay allows customers to pay through a seamless redirect-based flow using their ShopeePay balance.
+- [GCash](https://docs.payrails.com/docs/gcash.md): GCash is the Philippines' leading mobile wallet, with over 90 million registered users. It enables customers to make secure cashless payments for online purchases, bills, and more. With GCash, customers can complete purchases through a simple redirect-based flow using their GCash account.
+- [Touch 'n Go](https://docs.payrails.com/docs/touch-n-go.md): Touch 'n Go eWallet is Malaysia's most widely used digital wallet, trusted by millions of Malaysians for everyday payments — from online purchases and bill payments to toll and transit fares. With Touch 'n Go, customers can complete purchases securely through a redirect-based flow.
+- [Konbini](https://docs.payrails.com/docs/konbini.md): Konbini is Japan's widely used cash payment method, allowing customers to pay for online purchases at convenience store chains (konbini) such as 7-Eleven, FamilyMart, Lawson, and others. It is especially popular among customers who prefer to pay in cash or do not have a credit card.
+- [VietQR](https://docs.payrails.com/docs/vietqr.md): VietQR is Vietnam's standardized QR payment solution, allowing customers to pay instantly by scanning a QR code using any participating Vietnamese banking app. It is compatible with over 40 banks and provides immediate payment confirmation, making it one of the fastest-growing payment methods in Vietnam.
+- [MoMo](https://docs.payrails.com/docs/momo.md): MoMo is Vietnam's leading digital wallet and mobile payment platform, with tens of millions of users. It allows customers to make secure payments for online and offline transactions, money transfers, bill payments, and more. With MoMo, customers can complete purchases through a simple redirect-based flow using their MoMo account.
+- [QRIS](https://docs.payrails.com/docs/qris.md): QRIS (Quick Response Code Indonesian Standard) is Indonesia's national standardized QR payment system, regulated by Bank Indonesia. It allows customers to pay by scanning a single QR code using any participating Indonesian banking or e-wallet app, making it one of the most interoperable and rapidly growing payment methods in Indonesia.
+- [PromptPay](https://docs.payrails.com/docs/promptpay.md): PromptPay is Thailand's national instant payment network, launched by the Bank of Thailand. It enables customers to make real-time bank transfers and QR payments using any participating Thai banking app, making it one of the most interoperable and widely adopted payment methods in Thailand.
+- [SPEI](https://docs.payrails.com/docs/spei.md): SPEI (Sistema de Pagos Electrónicos Interbancarios) is Mexico's real-time interbank electronic funds transfer system. It allows customers to make instant online payments directly from their bank accounts, making it one of Mexico's most trusted and widely used online payment methods for e-commerce.
+- [OXXO](https://docs.payrails.com/docs/oxxo.md): OXXO is Mexico's most popular cash payment method, allowing customers to pay for online purchases in cash at any OXXO convenience store — the largest chain of convenience stores in Mexico with over 20,000 locations nationwide. It is especially popular among customers who prefer cash payments or don't have a credit card.
+- [MB Way](https://docs.payrails.com/docs/mb-way.md): MB WAY is Portugal's most popular digital wallet payment method. When paying with MB WAY, customers initiate payments using their phone number and authenticate and approve them using their MB WAY app. You get immediate notification of whether the payment succeeded or failed.  Transaction amounts between 0.50 EUR and 5,000 EUR are supported. MB WAY users have a default daily cumulative limit of 1,000 EUR, adjustable up to 10,000 EUR in the app.
+- [PAYCO](https://docs.payrails.com/docs/payco.md): PAYCO is a popular digital wallet payment method in South Korea. When a customer makes a payment, they are redirected to the local processor partner to authenticate and authorize the payment, then redirected back to your site after authorization.
+- [Korean Local Cards](https://docs.payrails.com/docs/korean-local-cards.md): Korean Local Cards enable South Korea-based customers to pay using all locally issued cards from South Korean card issuers (such as Shinhan, Hyundai, and Samsung Card). When a customer makes a payment, they are redirected to Stripe's local processor partner to select their card issuer and authenticate the payment, then redirected back to your site after authorization.  This allows merchants to accept card payments from the majority of South Korean consumers without a local entity.
+- [MobilePay](https://docs.payrails.com/docs/mobilepay.md): MobilePay is a popular digital wallet payment method used in Denmark and Finland. It allows customers to authenticate and approve payments using the MobilePay app, with immediate notification of whether the payment succeeded or failed.
+- [Multibanco](https://docs.payrails.com/docs/multibanco.md): Multibanco is a voucher-based payment method widely used in Portugal. After checkout, customers receive a voucher containing a Multibanco entity number and a reference number, which they use to pay through online banking or at an ATM. Multibanco is a delayed notification payment method — payment confirmation may be delayed by several days, particularly over weekends.
+- [BLIK](https://docs.payrails.com/docs/blik.md): BLIK is Poland's most widely used online payment method. BLIK is a single-use payment method that requires customers to authenticate their payments. When customers want to pay online using BLIK, they request a six-digit code from their banking application and enter it into the payment collection form. The bank sends a push notification to the customer's mobile phone asking them to authorize the payment inside their banking application. The BLIK code is valid for 2 minutes; customers have 60 seconds to authorize the payment after starting a payment. After 60 seconds, it times out and they must request a new BLIK code. Customers typically approve BLIK payments in less than 10 seconds.
+- [Bancontact](https://docs.payrails.com/docs/bancontact.md): Bancontact is the most popular online payment method in Belgium, with over 15 million cards in circulation. Customers use a Bancontact card or mobile app linked to a Belgian bank account to make online payments. Bancontact provides immediate payment notification upon success or failure.
+- [Klarna](https://docs.payrails.com/docs/klarna-1.md): Klarna is a global buy now, pay later (BNPL) payment method available across a large number of countries in Europe, North America, and beyond. When a customer selects Klarna at checkout, they are redirected to Klarna to authenticate and confirm their purchase as a single one-time payment.
+- [Workflow Studio Overview](https://docs.payrails.com/docs/workflow-studio-overview.md)
+- [Quick Start Guide](https://docs.payrails.com/docs/workflow-studio-quick-start.md)
+- [Triggers](https://docs.payrails.com/docs/workflow-studio-triggers.md)
+- [Actions](https://docs.payrails.com/docs/workflow-studio-actions.md)
+- [Conditions and Branching](https://docs.payrails.com/docs/workflow-studio-conditions.md)
+- [Condition Operators Reference](https://docs.payrails.com/docs/workflow-studio-condition-operators.md)
+- [Monitoring Workflow Executions](https://docs.payrails.com/docs/workflow-studio-monitoring.md)
+- [Status Codes Reference](https://docs.payrails.com/docs/workflow-studio-status-codes.md)
+- [Workflow Examples](https://docs.payrails.com/docs/workflow-studio-examples.md)
+- [Simple Authorization](https://docs.payrails.com/docs/workflow-studio-example-simple-authorization.md)
+- [Authorization with Fraud Screening](https://docs.payrails.com/docs/workflow-studio-example-authorization-with-fraud.md)
+- [Authorization with 3D Secure](https://docs.payrails.com/docs/workflow-studio-example-authorization-with-3ds.md)
+- [Full Authorization with Fraud and 3DS](https://docs.payrails.com/docs/workflow-studio-example-full-authorization.md)
+- [Capture with Fraud Update](https://docs.payrails.com/docs/workflow-studio-example-capture-with-fraud-update.md)
+- [Conditional Refund](https://docs.payrails.com/docs/workflow-studio-example-conditional-refund.md)
+- [Event-Driven Auto-Capture](https://docs.payrails.com/docs/workflow-studio-example-event-driven-auto-capture.md)
+- [Provider Routing with Conditions](https://docs.payrails.com/docs/workflow-studio-example-provider-routing.md)
+- [Glossary](https://docs.payrails.com/docs/workflow-studio-glossary.md)
+- [Authorize a payment](https://docs.payrails.com/docs/authorize-a-payment.md)
+- [Capture a payment](https://docs.payrails.com/docs/capture-a-payment.md)
+- [Cancel a payment](https://docs.payrails.com/docs/cancel-a-payment.md)
+- [Refund a payment](https://docs.payrails.com/docs/refund-a-payment.md)
+- [Test payments](https://docs.payrails.com/docs/test-payments.md)
+- [Receive notifications](https://docs.payrails.com/docs/receive-notifications.md)
+- [3D Secure](https://docs.payrails.com/docs/3d-secure.md)
+- [In-person Payments ](https://docs.payrails.com/docs/in-person.md)
+- [Getting Started](https://docs.payrails.com/docs/getting-started-1.md): In this section, you will learn how to use Vault as a standalone module, about our proxies, tokenization and detokenization methods.
+- [Vault Proxy](https://docs.payrails.com/docs/vault-proxy.md): Learn about our proxy solutions to choose the best approach for your use cases.
+- [Instant Proxy](https://docs.payrails.com/docs/proxy-payment-instruments.md): No prior configuration, fast and simple proxy with payment providers.
+- [Apple Pay via Proxy](https://docs.payrails.com/docs/apple-pay-via-proxy.md): Learn your options to tokenize Apple Pay instruments and how to use them in proxy flow.
+- [Google Pay via Proxy](https://docs.payrails.com/docs/google-pay-via-proxy.md): Learn your options to tokenize Google Pay instruments and how to use them in different flows.
+- [Configurable Proxy](https://docs.payrails.com/docs/proxy-connections.md): Highly configurable proxy to work with any inbound and outbound connection to any third party.
+- [Managing Connections](https://docs.payrails.com/docs/managing-connections.md): Learn how to configure and activate inbound and outbound connections.
+- [Invoking Connections](https://docs.payrails.com/docs/invoking-connections.md): Learn how to invoke inbound and outbound connections that are created in the previous step.
+- [Records, Aliases and Instruments](https://docs.payrails.com/docs/tokenize-records.md): Learn about the concept of records, aliases and fields.
+- [Tokenize Cards via SDK](https://docs.payrails.com/docs/tokenize-payment-instruments.md)
+- [Tokenize cards with Secure Fields](https://docs.payrails.com/docs/tokenize-cards-with-secure-fields.md)
+- [Tokenize cards with Client-side Encryption](https://docs.payrails.com/docs/tokenize-cards-with-client-side-encryption.md)
+- [Tokenize cards with API-only](https://docs.payrails.com/docs/tokenize-cards-with-api-only.md)
+- [Display Cards via SDK](https://docs.payrails.com/docs/display-sdk.md): Display tokenized card data securely in your frontend—with a customizable, easy to integrate, and fully compliant SDK.
+- [Dynamic Styling Based on BIN](https://docs.payrails.com/docs/dynamic-styling-based-on-bin.md): Use case where the styling of the elements and how card information is shown are based on the BIN (ie. Visa, Mastercard, etc)
+- [Network Tokens](https://docs.payrails.com/docs/network-tokens.md): Learn the benefits of using network tokenization with Payrails as well as how to implement for more secure, efficient, and seamless payments.
+- [Onboarding to Networks](https://docs.payrails.com/docs/onboarding-to-networks.md): Learn how to get onboarded to networks as a Token Requestor to start provisioning network tokens.
+- [Provision Network Tokens](https://docs.payrails.com/docs/provision-network-tokens.md): Learn how to provision network tokens to leverage its benefits in the most optimized way.
+- [Transacting with Network Tokens](https://docs.payrails.com/docs/transacting-with-network-tokens.md): Learn how to use network tokens and cryptograms in payment transactions.
+- [Automatic Lifecycle Updates](https://docs.payrails.com/docs/automatic-lifecycle-updates.md): Learn the details of lifecycle update events and how they are automatically managed in Payrails Vault.
+- [Token Migration](https://docs.payrails.com/docs/token-migration.md): Import tokens from other vault providers into Payrails securely while maintaining PCI DSS compliance. Export your payment data when needed.
+- [Self-served migration of card data from PSPs](https://docs.payrails.com/docs/self-serve-migration.md): Migrate your card from PSPs to Payrails at any point in time using autonomous self-serve approach.
+- [Frequently Asked Questions](https://docs.payrails.com/docs/frequently-asked-questions.md): Find answers to common questions about how Payrails Vault helps you securely store, manage, and use sensitive payment data.
+- [Connect your data sources](https://docs.payrails.com/docs/connect-your-data-sources.md)
+- [Adyen](https://docs.payrails.com/docs/adyen-1.md)
+- [Amex](https://docs.payrails.com/docs/amex-1.md)
+- [Braintree](https://docs.payrails.com/docs/braintree-1.md)
+- [Checkout](https://docs.payrails.com/docs/checkout-1.md)
+- [J.P. Morgan](https://docs.payrails.com/docs/jp-morgan.md)
+- [Klarna](https://docs.payrails.com/docs/klarna.md)
+- [MangoPay](https://docs.payrails.com/docs/mangopay.md)
+- [PayPal](https://docs.payrails.com/docs/paypal-1.md)
+- [Stripe](https://docs.payrails.com/docs/stripe-1.md)
+- [Tap](https://docs.payrails.com/docs/tap-1.md): This guide will help you obtain the necessary API credentials to ingest payment, refund and payout data from TAP into your Payrails account.
+- [Upload files](https://docs.payrails.com/docs/upload-files.md)
+- [Reports](https://docs.payrails.com/docs/reports-1.md): Export financial and performance data from Payrails as CSV files, either through the Portal or via API.
+- [Payments report](https://docs.payrails.com/docs/report-payments.md): Gain deep insights into your authorization funnel and processing efficiency with a unified breakdown of payment statuses, failure results, and card-level metadata.
+- [Settlements report](https://docs.payrails.com/docs/report-settlements.md): This report provides a comprehensive breakdown of all transaction-level movements and associated costs that impact your merchant settlement balance.
+- [Transactions report](https://docs.payrails.com/docs/report-transactions.md): This report provides details on all transactions (event based) which impact your account balance.
+- [Unified Analytics](https://docs.payrails.com/docs/unified-analytics.md)
+- [Dashboards](https://docs.payrails.com/docs/dashboards.md): Learn how to interact with the dashboards.
+- [Fraud Score](https://docs.payrails.com/docs/fraud-score.md): This document explains how you can request a Fraud Score/Check action to be performed within the authorization flow. Also how to get notified about Fraud Score results.
+- [Getting started](https://docs.payrails.com/docs/chargeback-getting-started.md): Learn about how Payrails' Chargebacks works and the key features.
+- [Integrations](https://docs.payrails.com/docs/chargeback-integrations.md): Learn how to set up and configure dispute integrations in Payrails.
+- [Adyen](https://docs.payrails.com/docs/adyen-chargeback-integration.md): A step-by-step guide for setting up your Adyen dispute integration in the Payrails portal.
+- [Checkout](https://docs.payrails.com/docs/checkout-chargeback-integration.md): A step-by-step guide for setting up your Checkout.com payments integration in the Payrails portal.
+- [Stripe](https://docs.payrails.com/docs/stripe-chargeback-integration.md): A step-by-step guide for setting up your Stripe dispute integration in the Payrails portal.
+- [Klarna](https://docs.payrails.com/docs/klarna-chargeback-integration.md): A step-by-step guide for setting up your Klarna integration in the Payrails portal.
+- [Nuvei](https://docs.payrails.com/docs/nuvei-chargeback-integration.md): A step-by-step guide for setting up your Nuvei dispute integration in the Payrails portal.
+- [Alerts](https://docs.payrails.com/docs/configure-alerts.md): Stop checking the dashboard every hour. Let Payrails tell you when something dips.
+- [Payment Status](https://docs.payrails.com/docs/payment-status.md)
+- [Operation Types](https://docs.payrails.com/docs/operation-types.md)
+- [Operation Results](https://docs.payrails.com/docs/operation-results.md)
+- [Authorization flags](https://docs.payrails.com/docs/authorization-flags.md): Optional optimization parameters for improving your authorization rates.
+- [Executions](https://docs.payrails.com/docs/executions.md): View your workflow executions and related payments and events
+- [Holders](https://docs.payrails.com/docs/holder.md): This guide provides an introduction to the concepts of Holder and its relation with Instrument, Token, and Account which are commonly used terms in Payrails APIs.
+- [Payment Instruments and Tokens](https://docs.payrails.com/docs/manage-instruments.md)
+- [Notifications](https://docs.payrails.com/docs/notifications.md): This page describes how our Notifications work and what they include.
+- [Dispute notifications](https://docs.payrails.com/docs/dispute-notifications.md): In case your customer filed for a dispute, we can send you a Dispute notification. Everytime a provider sends us an update about the Dispute lifecycle, we will send you a new notification.
+- [Error codes](https://docs.payrails.com/docs/error-codes.md): The full list of Payrails error codes and how to resolve them.
+- [Currency codes](https://docs.payrails.com/docs/currency-codes.md): Look up the ISO 4217 currency codes Payrails supports.
+- [Billing](https://docs.payrails.com/docs/billing-use-cases.md): Use Payrails to collect and charge payment methods while your billing engine owns subscriptions, invoices, and dunning.
+- [Server-to-server Integration](https://docs.payrails.com/docs/server-to-server-integration-reference-architecture.md): Build a backend-driven Payrails integration that tokenizes on the frontend and your server controls the authorization steps, and webhook-first reconciliation.
+
+## API Reference
+- [Request an access token](https://docs.payrails.com/reference/getoauthtoken.md): Retrieve an access token to authenticate your requests to Payrails' services.  The access token will be valid for a limited duration indicated by the `expires_in` field in the response.  You should store the token on your side until it expires, at which point you will need to obtain a new one by making a new request.
+- [Initialize a client SDK](https://docs.payrails.com/reference/clientinit.md): Fetch the necessary information used to initialize Payrails SDK on your client.
+- [Search & list workflow configurations](https://docs.payrails.com/reference/listworkflowconfigurations.md): Fetch a list of workflow configuration versions for the given workflow code and query parameters.
+- [Create a workflow configuration](https://docs.payrails.com/reference/createworkflowconfiguration.md): Create a new workflow configuration version for the given workflow code.
+- [Get a workflow configuration](https://docs.payrails.com/reference/getworkflowconfigurationversion.md): Get a workflow configuration version.
+- [Updates a workflow configuration version](https://docs.payrails.com/reference/patchworkflowconfigurationversion.md): Updates the description attribute of a workflow configuration version.
+- [Get the default workflow configuration](https://docs.payrails.com/reference/getdefaultworkflowconfigurationversion.md): Get the default workflow configuration version.
+- [Update the default workflow configuration](https://docs.payrails.com/reference/setdefaultworkflowconfigurationversion.md): Update the default workflow configuration version.
+- [Search & list executions](https://docs.payrails.com/reference/listexecutions.md): Fetch a list of merchant workflows executions for the given query parameters.
+- [Create an execution](https://docs.payrails.com/reference/createexecution.md): Create a workflow execution.
+- [Get an execution by ID](https://docs.payrails.com/reference/getexecution.md): Get a workflow execution for the given ID.
+- [Lookup payment options](https://docs.payrails.com/reference/lookupaction.md): Trigger an action to lookup the payment options for a workflow execution. This action synchronously returns the necessary data to present the payment options to the customer on the client-side.
+- [Start a payment session](https://docs.payrails.com/reference/startpaymentsessionaction.md): Request the start of a payment session during a workflow execution. This action synchronously returns the necessary data to handle the session on the client-side.
+- [Authorize a payment](https://docs.payrails.com/reference/authorizeaction.md): Request a payment authorization during a workflow execution.
+- [Confirm a payment](https://docs.payrails.com/reference/confirmaction.md): Request a payment confirmation during a workflow execution.
+- [Cancel a payment](https://docs.payrails.com/reference/cancelaction.md): Request a payment cancelation during a workflow execution.
+- [Capture a payment](https://docs.payrails.com/reference/captureaction.md): Request a payment capture during a workflow execution.
+- [Refund a payment](https://docs.payrails.com/reference/refundaction.md): Request a payment refund during a workflow execution.
+- [Create a payout](https://docs.payrails.com/reference/payoutaction.md): Request a payout during a workflow execution.
+- [Search & list events](https://docs.payrails.com/reference/getworkflowhistory.md): Search & list a workflow execution event history.
+- [List actions of an execution](https://docs.payrails.com/reference/getworkflowactions.md): Fetch a list of merchant workflows actions for the given execution.
+- [Update fraud order status](https://docs.payrails.com/reference/fraudupdateaction.md): Update the fraud provider with the fraud order status.
+- [Search & list actions](https://docs.payrails.com/reference/listactions.md): Fetch a list of merchant workflows actions for the given query parameters.
+- [Get an action by ID](https://docs.payrails.com/reference/getaction.md): Get a workflow action for the given ID.
+- [Search & list payments](https://docs.payrails.com/reference/listpayments.md): Fetch a list of payments.
+- [Get payment by ID](https://docs.payrails.com/reference/getpayment.md): Find a Payment from a given ID.
+- [Get Payment Operations by Payment ID](https://docs.payrails.com/reference/getpaymentoperations.md): Find a payment operation from a given `paymentID`.
+- [Get Payment Operation Logs by Payment Operation ID](https://docs.payrails.com/reference/getpaymentoperationlogs.md): Find payment operation logs from a given `operationID`.
+- [Search & list instruments](https://docs.payrails.com/reference/listinstruments.md): Fetch a list of payment instruments for the given query parameters.
+- [Create an instrument](https://docs.payrails.com/reference/createinstrument.md): Create a payment instrument.
+- [Get an instrument by ID](https://docs.payrails.com/reference/getinstrument.md): Get instrument by ID.
+- [Delete an instrument](https://docs.payrails.com/reference/deleteinstrument.md): Delete an instrument from a holder.
+- [Update an instrument](https://docs.payrails.com/reference/updateinstrument.md): Update an instrument.
+- [Provision a Network Token](https://docs.payrails.com/reference/provisionnetworktokenpublic.md): Provision a network token for a given payment instrument.
+- [Generate cryptogram for a Network Token](https://docs.payrails.com/reference/generatecryptogram.md): Generate cryptogram for a Network Token of a given instrument.
+- [Search & list tokens](https://docs.payrails.com/reference/listtokens.md): Fetch a list of tokens for a payment instrument.
+- [Create a token](https://docs.payrails.com/reference/createtoken.md): Create a token for a payment instrument.
+- [Get a token by ID](https://docs.payrails.com/reference/gettoken.md): Get a token by its ID in the provider.
+- [Delete a token by ID](https://docs.payrails.com/reference/deletetoken.md): Delete a token from Payrails and the provider.
+- [Get a token by reference](https://docs.payrails.com/reference/gettokenfromprovider.md): Get a token by its reference.
+- [Delete a token by reference](https://docs.payrails.com/reference/deletetokenfromprovider.md): Delete a token from Payrails and the provider.
+- [Get issuer info by BIN](https://docs.payrails.com/reference/getbinlookup.md): Provides card issuer information based on a bank identification number (BIN) or issuer identification number (IIN).
+- [Search & list providers](https://docs.payrails.com/reference/listproviders.md): Fetch a list of providers.
+- [Get provider by ID](https://docs.payrails.com/reference/getprovider.md): Retrieve the provider by provider ID.
+- [List active provider configs](https://docs.payrails.com/reference/listactiveproviderconfigs.md): Fetch a list of active provider configs.
+- [Create a provider config](https://docs.payrails.com/reference/createproviderconfig.md): Trigger an action to create the provider config.
+- [List Provider Configs by Provider](https://docs.payrails.com/reference/listproviderconfigs.md): Fetch a list of provider configs with a relationship to the provider.
+- [Update a provider config](https://docs.payrails.com/reference/updateproviderconfig.md): Trigger an action to update the provider config.
+- [Provider config by ID](https://docs.payrails.com/reference/providerconfiggetbyid.md): Retrieve the provider config by its ID.
+- [Update a provider config status](https://docs.payrails.com/reference/patchproviderconfig.md): Trigger an action to patch the provider config.
+- [Create a provider config with authenticated onboarding](https://docs.payrails.com/reference/createauthenticatedproviderconfig.md): Trigger an action to create the provider config after completing an authenticated onboarding flow.
+- [Update a provider config with authenticated onboarding](https://docs.payrails.com/reference/updateauthenticatedproviderconfig.md): Trigger an action to update the provider config after completing an authenticated onboarding flow.
+- [Create a provider config onboarding URL](https://docs.payrails.com/reference/createproviderconfigonboardingurl.md): Build a redirect onboarding URL for a provider config. If the provider config does not exist yet, use the same provider config ID later when creating the authenticated provider config.
+- [Create a new Ruleset](https://docs.payrails.com/reference/createruleset.md): Create a new merchant Ruleset.
+- [List Rulesets](https://docs.payrails.com/reference/listrulesets.md): Fetch a list of rulesets for the given query parameters.
+- [Update a Ruleset](https://docs.payrails.com/reference/updateruleset.md): Creates a new version of the merchant Ruleset.
+- [Get a Ruleset](https://docs.payrails.com/reference/getruleset.md): Fetches a Ruleset by a given ID and version.
+- [Search & list holders](https://docs.payrails.com/reference/listholders.md): Search & list holders.
+- [Create a holder](https://docs.payrails.com/reference/createholder.md): Create a holder.
+- [Get a holder by ID](https://docs.payrails.com/reference/getholder.md): Get a holder for the given id.
+- [Create an account](https://docs.payrails.com/reference/createaccount.md): Create an account.
+- [Create a transfer](https://docs.payrails.com/reference/createtransfer.md): Trigger an action to perform a Transfer.
+- [Get a transfer by ID](https://docs.payrails.com/reference/gettransfer.md): Get a transfer from a given ID.
+- [Create SSO connection](https://docs.payrails.com/reference/createssoconnection.md): Create a new SSO identity provider connection.
+- [List SSO connections](https://docs.payrails.com/reference/listssoconnections.md): Retrieve SSO identity provider connections using optional filters and cursor-based pagination.
+- [Get SSO connection](https://docs.payrails.com/reference/getssoconnectionbyid.md): Retrieve a single SSO identity provider connection by its identifier.
+- [Get SAML IdP configuration values](https://docs.payrails.com/reference/listsamlconnectionconfigs.md): Retrieve configuration values required to connect supported SAML identity providers for the active merchant.
+- [Update SSO connection](https://docs.payrails.com/reference/patchssoconnection.md): Update the status or metadata of an existing SSO identity provider connection.
+- [Search & list API Logs](https://docs.payrails.com/reference/apilogs.md): Fetch a list of API Logs for the given query parameters.
+- [Search & list API Logs](https://docs.payrails.com/reference/apilogs-1.md): Fetch a list of API Logs for the given query parameters.
+- [Get an API Log event by ID](https://docs.payrails.com/reference/getapilogevent.md): Get API Log event by ID.
+- [Create a workspace](https://docs.payrails.com/reference/createworkspace.md): Create a new workspace.
+- [Fetch a list of workspaces](https://docs.payrails.com/reference/getallworkspaces.md): Fetch a list of workspaces based on user permissions.
+- [Get a workspace by ID](https://docs.payrails.com/reference/getworkspace.md): Get a workspace for the given ID.
+- [Create workspaces](https://docs.payrails.com/reference/createworkspaces.md): Create workspaces in bulk.
+- [List drop-in links](https://docs.payrails.com/reference/listdropinlinks.md): Fetch a paginated list of drop-in links for the given query parameters.
+- [Create a drop-in link](https://docs.payrails.com/reference/createdropinlink.md): Create a drop-in link.
+- [Get a drop-in link](https://docs.payrails.com/reference/getdropinlink.md): Fetch a single drop-in link by ID.
+- [Delete a drop-in link](https://docs.payrails.com/reference/deletedropinlink.md): Mark a drop-in link as deleted.
+- [Search & list reports](https://docs.payrails.com/reference/getreports.md): Fetch a list of reports.
+- [Get a report by ID](https://docs.payrails.com/reference/getreport.md): Get a report by ID.
+- [Search & list report runs](https://docs.payrails.com/reference/listreportruns.md): Fetch a list of report runs.
+- [Create a report run](https://docs.payrails.com/reference/createreportrun.md): Create a report run for the provided report.
+- [Get a report run by ID](https://docs.payrails.com/reference/getreportrun.md): Get a reportRun by ID.
+- [Search & list Fraud checks](https://docs.payrails.com/reference/listfraudchecks.md): Fetch a list of fraud checks.
+- [Get Fraud check by ID](https://docs.payrails.com/reference/getfraud.md): Find a Fraud check from a given ID.
+- [Get Fraud Operations by Fraud ID](https://docs.payrails.com/reference/getfraudoperations.md): Find a fraud operation from a given `fraudID`.
+- [Get Fraud Operation Logs by Fraud Operation ID](https://docs.payrails.com/reference/getfraudoperationlogs.md): Find fraud operation logs from a given `operationID`.
+- [Search & list ThreeDS entities](https://docs.payrails.com/reference/listthreeds.md): Fetch a list of ThreeDS entities.
+- [Get ThreeDS authentication by ID](https://docs.payrails.com/reference/getthreeds.md): Find a ThreeDS authentication from a given ID.
+- [Get ThreeDS Operations by ThreeDS ID](https://docs.payrails.com/reference/getthreedsoperations.md): Find ThreeDS operations from a given `threeDSId`.
+- [Get ThreeDS Operation Logs by ThreeDS Operation ID](https://docs.payrails.com/reference/getthreedsoperationlogs.md): Find ThreeDS operation logs from a given `operationID`.
+- [Bulk manually reconcile records](https://docs.payrails.com/reference/bulkmanualreconcilerecords.md): Marks multiple reconciliation records as manually reconciled in a single bulk operation, capturing operator supplied reasons and comments. Records must not already be in a reconciled resolution. The response includes a summary of successes and failures.
+- [Execute an instant proxy request](https://docs.payrails.com/reference/vaultproxy.md): Executes a proxy request from our Vault to an external provider.
+- [Invoke an outbound proxy connection](https://docs.payrails.com/reference/outboundconnectioninvocation.md): Proxies an outbound request to the destination using the provided headers. Please note that you can configure connection using any of HTTP methods, not only POST.
+- [Create a connection](https://docs.payrails.com/reference/createvaultconnections.md): Saves the connection data and returns connection with ID.
+- [Filter & list connections](https://docs.payrails.com/reference/listconnections.md): Fetch list of connections for given query parameters. By default, deleted connections are excluded from the results.
+- [Get connection details](https://docs.payrails.com/reference/getconnection.md): Get connection details for the given connection ID.
+- [Update connection details](https://docs.payrails.com/reference/updateconnection.md): Update connection details for the given connection ID.
+- [Create a new version of a connection](https://docs.payrails.com/reference/createvaultconnectionversions.md): Saves the connection version data and returns connection version with ID.
+- [Set live version of a connection](https://docs.payrails.com/reference/setliveversion.md): Set certain version of connection as live version or deactivates connection by removing current live version.
+- [Get connection version details](https://docs.payrails.com/reference/connectionversiondetail.md): Get connection version details by connection id and version id.
+- [List connection versions for connection](https://docs.payrails.com/reference/listconnectionversions.md): Fetch a list of connection versions for the given connectionId.
+- [Delete a connection](https://docs.payrails.com/reference/deleteconnection.md): Soft-delete a connection by marking it as deleted. Only connections without an active (live) version can be deleted.
+- [Get field details by alias](https://docs.payrails.com/reference/fieldbyalias.md): Get field details for the given alias.
+- [Get field details by alias list](https://docs.payrails.com/reference/fieldsinfobyaliases.md): Get field details for multiple provided aliases. The order in which aliases returned may not match the order in which you passed the aliases in request. Not found fields will be ignored: if you request fields by aliases a, b, c and there is no field with alias b, then only fields a and c are returned.
+- [Get record and its fields by ID](https://docs.payrails.com/reference/getrecord.md): Get a record and all fields associated with the record by the given ID.
+- [Get record and its fields by alias](https://docs.payrails.com/reference/getrecordbyalias.md): Retrieve a record and all fields associated with the record by the alias of one of its fields.
+- [Delete record by ID](https://docs.payrails.com/reference/deleterecord.md): Delete a record and all fields associated with it.
+- [Delete a record by the alias of one of its fields](https://docs.payrails.com/reference/deleterecordbyalias.md): Delete a record and all fields associated with it by the alias of one of its fields.
+- [Get record and aliases for a given instrumentId.](https://docs.payrails.com/reference/recordsforinstrument.md): Get record, aliases, and all associated fields for a given instrumentId.
+- [Delete field by alias](https://docs.payrails.com/reference/deletefieldbyalias.md): Delete a field by the given alias.
+- [Delete field by record ID and type](https://docs.payrails.com/reference/deletefieldbyrecordidandtype.md): Delete a field by the given record ID and field type.
+- [Initialize a Vault Client SDK](https://docs.payrails.com/reference/vaultclientinit.md): Fetch the necessary information to initialize Display cards SDK on your client.
+- [Get a public encryption key for tokenization](https://docs.payrails.com/reference/vaultpublicinfo.md): Retrieve a public encryption key and a value to use as JWE kid field, to tokenize payment instruments in the vault.  The key will be valid for a limited duration indicated by the `expiresIn` field in the response.  You should renew the key on your side before it expires, at which point you will need to obtain a new one by making a new request.
+- [Defend a Dispute](https://docs.payrails.com/reference/defenddispute.md): Submit evidence to contest a dispute. Use this to send your defense materials directly to the payment provider.
+- [Upload evidence files](https://docs.payrails.com/reference/uploaddisputeevidence.md): Upload evidence files on the dispute.
+- [Submit evidence files](https://docs.payrails.com/reference/submitdisputeevidence.md): Finalize and submit previously uploaded evidence files for a dispute. Once submitted, the evidence is locked in and forwarded as part of your response to the dispute.
+- [Search & list Disputes](https://docs.payrails.com/reference/listdisputes.md): Search and list disputes in your workspace. Use the available filters to narrow results by status, payment, provider, date range, and more.
+- [Get Dispute by ID](https://docs.payrails.com/reference/getdispute.md): Retrieve a dispute by its ID. Use the include parameters to expand related objects such as payment details, evidence files, and representment sections in a single request.
+- [Search & list Evidences](https://docs.payrails.com/reference/listdisputeevidences.md): Fetch a list of Evidences.
+- [Download an evidence file by ID](https://docs.payrails.com/reference/downloaddisputeevidence.md): Download an evidence file from a given ID.
+- [Accept a Dispute](https://docs.payrails.com/reference/acceptdispute.md): Concede a dispute without submitting a defense. Use this when you choose not to contest the chargeback.
+- [Generate representment plan](https://docs.payrails.com/reference/generatedisputerepresentmentplan.md): Generate a representment plan for a dispute.
+- [Submit representment plan evidences](https://docs.payrails.com/reference/submitdisputerepresentmentplanevidences.md): Confirm your evidence selections for the representment plan and trigger generation of the written representment sections. Returns the generated sections along with a timeline of key events for review.
+- [Generate representment PDF](https://docs.payrails.com/reference/generatedisputerepresentmentpdf.md): Compile your representment sections into a PDF and attach it to the dispute. Call this after you are satisfied with the written sections and ready to finalize your representment.
+- [Edit representment sections](https://docs.payrails.com/reference/editdisputerepresentmentsections.md): Update the written sections of your dispute response. Use this endpoint to revise the content before finalizing your representment. If a PDF has already been generated for this dispute, editing the sections will discard it so it can be regenerated with your changes.
+- [Get Dispute Activities by Dispute ID](https://docs.payrails.com/reference/getdisputeactivities.md): List all timeline activities for a given dispute, ordered chronologically.
+- [Regenerate representment plan](https://docs.payrails.com/reference/regeneratedisputerepresentmentplan.md): Discard the current representment plan and generate a fresh one from scratch. Use this when the AI-generated plan does not meet your needs and you want to start over. Returns the new plan immediately. Not available after the defense has been submitted or while another operation is in progress.
+- [Attach Tags to a Dispute](https://docs.payrails.com/reference/attachdisputetags.md): Attach one or more Tags to a Dispute. For single-select tag types, attaching a new tag automatically replaces any existing tag of that type. For multi-select tag types, tags are added idempotently.
+- [Detach a Tag from a Dispute](https://docs.payrails.com/reference/detachdisputetag.md): Remove a Tag from a Dispute. This operation is idempotent.
+- [List Tags](https://docs.payrails.com/reference/listtags.md): Search and list Tags available to the caller's workspace.
+- [Create Tag](https://docs.payrails.com/reference/createtag.md): Create a new Tag.
+- [Update Tag](https://docs.payrails.com/reference/updatetag.md): Update a Tag's name, color, or description.
+- [Delete Tag](https://docs.payrails.com/reference/deletetag.md): Soft-delete a Tag. Deleted tags can no longer be attached to disputes.
+- [Bulk Attach Tags to Disputes](https://docs.payrails.com/reference/bulkattachdisputetags.md): Attaches the same set of tags to multiple disputes in a single operation. For single-select tag types, attaching replaces any existing tag of that type on each dispute. For multi-select tag types, tags are added idempotently. Fails fast if any dispute ID or tag ID is invalid.
+- [Bulk Replace Dispute Tags by Type](https://docs.payrails.com/reference/bulkreplacedisputetagsbytype.md): Atomically replaces all tags of the specified type on multiple disputes with the provided set. Sending an empty tagIds array removes all tags of that type from every dispute. Tags of other types are not affected. Fails fast if any dispute ID or tag ID is invalid.
+- [Replace Dispute Tags by Type](https://docs.payrails.com/reference/replacedisputetagsbytype.md): Atomically replaces all tags of the specified type attached to a dispute with the provided set. Sending an empty tagIds array removes all tags of that type. Tags of other types are not affected.
+- [List dispute service runs](https://docs.payrails.com/reference/listdisputeruns.md): List asynchronous runs in the dispute service, scoped to the workspaces you can access. Runs back operations such as a backfill, which pulls disputes and their related payments from the provider into your dispute and payment records. Use the filters to narrow by run type, status, or resolution; results are ordered most-recent first.
+- [Get a dispute service run by ID](https://docs.payrails.com/reference/getdisputerun.md): Retrieve a single dispute service run by its ID, including its execution attempts. A run that exists but belongs to a workspace you cannot access returns 404. Use this to inspect the outcome of a backfill, including its window, the disputes and payments it loaded, and any unsupported operations.
+- [List Dispute Alert Enrollments](https://docs.payrails.com/reference/listdisputealertenrollments.md): List the pre-chargeback dispute alert enrollments visible in your workspace.
+- [Enroll Descriptors for Dispute Alerts](https://docs.payrails.com/reference/enrolldisputealert.md): Enroll one or more merchant descriptors with a pre-chargeback alert program. Runs synchronously and returns once the provider has accepted the enrollment.
+- [Search & list Dispute Alerts](https://docs.payrails.com/reference/listdisputealerts.md): Search and list pre-chargeback dispute alerts in your workspace. Use the available filters to narrow results by status, match state, program, and date range.
+- [Get Dispute Alert by ID](https://docs.payrails.com/reference/getdisputealert.md): Retrieve a single pre-chargeback dispute alert by its ID.
+- [Action a Dispute Alert](https://docs.payrails.com/reference/actiondisputealert.md): Submit the merchant's chosen outcome for a pre-chargeback dispute alert. The outcome is forwarded to the alert provider and the alert is moved to a terminal status. Runs synchronously and returns once the provider has been notified.
+- [List Enrollment Descriptors](https://docs.payrails.com/reference/listenrollmentdescriptors.md): List the descriptors associated with a dispute alert enrollment.
+- [Add Descriptors to Enrollment](https://docs.payrails.com/reference/adddescriptorstoenrollment.md): Add one or more merchant descriptors to an existing dispute alert enrollment.
+- [Unenroll a Descriptor](https://docs.payrails.com/reference/unenrollenrollmentdescriptor.md): Remove a single descriptor from a dispute alert enrollment. Runs synchronously and returns once the unenroll request has been submitted.
+- [List Enrollment Events](https://docs.payrails.com/reference/listenrollmentevents.md): List the activity events for a dispute alert enrollment.
+- [List Dispute Alert Events](https://docs.payrails.com/reference/listdisputealertevents.md): List the audit timeline events for a pre-chargeback dispute alert, newest first.

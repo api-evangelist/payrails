@@ -1,0 +1,40 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.payrails.com/docs/sdk
+packages:
+  - language: javascript
+    registry: npm
+    name: "@payrails/web-sdk"
+    version: 6.0.1
+    url: https://www.npmjs.com/package/@payrails/web-sdk
+    install: npm install @payrails/web-sdk
+    official: true
+    description: Payrails Web SDK — client-side tokenization + checkout (Drop-in, Secure Fields, Elements).
+  - language: javascript
+    registry: npm
+    name: "@payrails/react-native-sdk"
+    version: 2.10.1
+    url: https://www.npmjs.com/package/@payrails/react-native-sdk
+    install: npm install @payrails/react-native-sdk
+    official: true
+    description: Payrails React Native SDK — pre-built payment components for mobile apps.
+  - language: swift
+    registry: github
+    name: payrails/ios-sdk
+    url: https://github.com/payrails/ios-sdk
+    install: Swift Package Manager (github.com/payrails/ios-sdk)
+    official: true
+    description: Payrails iOS SDK.
+  - language: swift
+    registry: github
+    name: payrails/ios-cse
+    url: https://github.com/payrails/ios-cse
+    install: Swift Package Manager (github.com/payrails/ios-cse)
+    official: true
+    description: Payrails iOS client-side encryption (CSE) SDK.
+  - language: kotlin
+    registry: null
+    name: Payrails Android SDK
+    url: https://docs.payrails.com/docs/android-sdk-1
+    official: true
+    description: Payrails Android SDK (documented; distribution registry not confirmed).
