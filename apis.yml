@@ -10,6 +10,17 @@ description: >-
   chargeback/dispute management, fraud screening, and unified analytics. Authentication
   is OAuth 2.0 client-credentials (plus optional mTLS); events are delivered as
   HMAC-signed webhooks. Used by Eneba, PUMA, Vinted, Preply, inDrive, Just Eat, and Careem.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
